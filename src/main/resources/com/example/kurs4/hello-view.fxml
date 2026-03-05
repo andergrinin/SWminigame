@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs4.HelloController">
+    <children>
+        <Button layoutX="136.0" layoutY="341.0" mnemonicParsing="false" onAction="#onOk" prefHeight="35.0" prefWidth="137.0" text="OK" />
+        <Button layoutX="337.0" layoutY="341.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="35.0" prefWidth="137.0" text="Cancel" />
+        <Label layoutX="171.0" layoutY="38.0" text="Ім'я">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField layoutX="224.0" layoutY="32.0" fx:id="TrName">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <CheckBox layoutX="273.0" layoutY="108.0" mnemonicParsing="false" text="Active?" fx:id="TrActive">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </CheckBox>
+        <ComboBox layoutX="273.0" layoutY="175.0" prefWidth="150.0" fx:id="TrSide" />
+        <Label layoutX="173.0" layoutY="179.0" text="Сторона: ">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <RadioButton layoutX="100.0" layoutY="280.0" mnemonicParsing="false" text="Trooper">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="tgr" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="240.0" layoutY="280.0" mnemonicParsing="false" text="Captain" toggleGroup="$tgr">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </RadioButton>
+        <RadioButton layoutX="393.0" layoutY="280.0" mnemonicParsing="false" text="General" toggleGroup="$tgr">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </RadioButton>
+    </children>
+</Pane>
